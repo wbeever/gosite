@@ -1,0 +1,21 @@
+{{define "header"}}
+
+<head>
+    <title>On The Level</title>
+    <meta name="description" content="website description" />
+    <meta name="keywords" content="website keywords, website keywords" />
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="static/style.css" />
+    <script type="text/javascript">
+        window.onload = function () {
+            if (localStorage.getItem("hasCodeRunBefore") === null) {
+                if (screen.width <= 700) {
+                    window.location = "mobile";
+                }
+                localStorage.setItem("hasCodeRunBefore", true);
+            }
+        }
+
+    </script>
+</head>
+{{end}}

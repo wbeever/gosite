@@ -1,0 +1,32 @@
+{{define "dcontact"}}
+<h1>Contact Options</h1>
+<p>Please use the form below to submit any questions.</p>
+<div class="form_settings">
+    <form action="mailto:williambeever@gmail.com" method="post" enctype="text/plain">
+        <p>
+            <span>Name</span>
+            <input class="contact" type="text" name="your_name" value="" />
+        </p>
+        <p>
+            <span>Email Address</span>
+            <input class="contact" type="text" name="your_email" value="" />
+        </p>
+        <p>
+            <span>Message</span>
+            <textarea class="contact textarea" rows="8" cols="50" name="your_enquiry"></textarea>
+        </p>
+        <p>
+            <span>Select One</span>
+            <select id="id" name="name">
+                <option value="1">Services</option>
+                <option value="2">Webmaster</option>
+                <option value="2">Personal</option>
+            </select>
+        </p>
+        <p style="padding-top: 15px">
+            <span>&nbsp;</span>
+            <input class="submit" type="submit" name="contact_submitted" value="submit" />
+        </p>
+    </form>
+</div>
+{{end}}
